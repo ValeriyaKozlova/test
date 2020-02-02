@@ -1,0 +1,574 @@
+// VARIABLES
+$background: #4C24B1;
+$navColor: #0A0C3E;
+$fontColor: #FFF;
+$buttonColor: #00FFB8;
+$headerColor: #00EBE7;
+$headerBorderColor: #FF00A6;
+$menuActiveColor: #4C79FE;
+
+body {
+    background: $background;
+    font-family: 'Roboto', sans-serif;
+    color: $fontColor;
+    overflow-x: hidden;
+    position: relative;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0;
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+    padding: 100px 2rem;
+    padding-bottom: 0;
+}
+
+//BUTTONS
+.button {
+    text-align: center;
+    margin-top: 2rem;
+    width: 15rem;
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 8px;
+    margin: auto;
+    padding: .5rem 0;
+    a {
+        display: block;
+        color: #000;
+        margin: auto;
+        font-weight: 500;
+    }
+    &:hover {
+        cursor: pointer;
+        color: $fontColor;
+        a {
+            color: $fontColor;
+            transition: all .3s;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+h6 {
+    color: $headerColor;
+    font-size: 1.5em;
+}
+h2 {
+    color: $headerColor;
+    font-weight: lighter;
+    font-size: 2em;
+    .border {
+        border: none !important;
+        border-bottom: 2px solid $headerBorderColor !important; 
+        padding-bottom: 0.5rem;
+    }
+}
+
+// MENU
+.navbar {
+    padding: 0;
+    .container {
+        margin: 0;
+    }
+    ul {
+        .nav-link {
+            &:hover {
+                color: $navColor;
+            }
+        }
+        .menuLanguages {
+            &:hover {
+                img {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}
+
+//THE MAIN PART
+#whatWeDo {
+    padding: 0;
+    #rowWeDo {
+        margin: 0;
+        padding: 0;
+    }
+    #text {
+        bottom: calc(0% - 106px);
+        left: 0%;
+        z-index: 10;
+        img {
+            width:80%;
+            top: -40%;
+            left: 10%;
+            z-index: -2;
+        }
+        .button {
+            margin-top: 3rem;
+        }
+    }
+}
+
+#rocketScene {
+    height: calc((100vh - 100px)/2);
+    max-height: 600px;
+}
+#scene,
+#fourthScene,
+#fifthScene,
+#rocketScene,
+#secondScene {
+    padding: 0;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+#scene,
+#fourthScene,
+#fifthScene {
+    height: 65vh;
+    max-height: 600px;
+}
+#scene {
+    background: url(../images/forcompanies-layout-1.png); 
+    background-repeat: no-repeat;
+    #office {
+        bottom: 0%;
+    }
+}
+#rocketScene { 
+    background-image: url(../images/backgroundFirstScene.png);
+    #spaceNebula {
+        width: 50%;
+        top: calc(50% - 200px);
+        left: calc(50% - 207px);
+    }
+    #lune,
+    #rightCloud,
+    #leftCloud {
+        top: -50%;
+    }
+    #lune {
+        right: 15%;
+    }
+    #rightCloud {
+        right: 0%;
+    }
+    #leftCloud {
+        right: 25%;
+    }
+    #rocket {
+        left: 0;
+        bottom: -20%;
+        z-index: 2;
+    }
+}
+#secondScene {
+    padding-bottom: 30%;
+    background-image: url(../images/backgroundSecondScene.png);
+    background-size: contain;
+    #woman,
+    #man {
+        left: 0%;
+    }
+    #woman {
+        bottom: 10%;
+        transition: all 3s;
+    }
+    #man {
+        bottom: 0%;
+        transition: all 2s;
+    }
+}
+
+#fourthScene{
+    padding-right: 0;
+    padding-left: 0;
+    #background-4 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #nebula-4,
+    #lune-4,
+    #leftCloud-4,
+    #rightCloud-4,
+    #rocketSmoke,
+    #rocket-4 {
+        z-index: -2;
+    }
+    #nebula-4 {
+        top: -50%;
+        left: -10%;
+    }
+    #lune-4 {
+        top: 0%;
+        right: 10%;
+    }
+    #leftCloud-4 {
+        top: 20%;
+        right: 25%;
+    }
+    #rightCloud-4 {
+        top: 15%;
+        right: 0%;
+    }
+    #rocketSmoke {
+        bottom: 5%;
+        left: -5%;
+        z-index: -5;
+        transition: all 1s;
+    }
+    #rocket-4 {
+        left: 18%;
+        bottom: 20%;
+        transition: all .5s;
+    }
+}
+
+#forCompanies,
+#forEntrepreneurs {
+    .button {
+        left: 70%;
+        bottom: 5%;
+    }
+}
+#forEntrepreneurs {
+    .button {
+        bottom: -10%;
+    }
+}
+#forCompanies {
+    .text-part {
+        .absolute-space {
+            z-index: -5;
+            top: 0%;
+            left: -5%;
+            img {
+                width: 60%;
+            }
+        }
+    }
+}
+
+.bold {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+}
+
+//The service part
+#services {
+    #fifthScene{
+        #smallPartRight {
+            top: 10%;
+            right: 13%;
+        }
+        #smallPartLeft {
+            bottom: 20%;
+            left: 20%;
+        }
+        #girl {
+            top: 15%;
+            left: 30%;
+        }
+    }
+    #servicesVisiblePart {
+        transition: all .5s;
+    }
+    #hidden {
+        padding-top: 100px;
+        height: 40vh;
+        top: 0%;
+        opacity: 0;
+        transform: translate(100%);
+        transition: all .5s;
+        z-index: -2;
+        #imgRocket {
+            left: -5%;
+            bottom: 100%;
+        }
+        #imgPlant{
+            right: -10%;
+            bottom: 100%;
+        }
+        #rightColumn {
+            li {
+                list-style-type: square;
+            }
+        }
+        p {
+            margin-top: 0;
+            font-size: small;
+            font-weight: lighter;
+        }
+        li {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #hiddenContent {
+            padding: 0;
+            #hiddenMiddleImg {
+                top: 10%;
+                left: calc(50% - 150px);
+            }
+        }
+        #hiddenImg {
+            padding: 0;
+        }
+        #back {
+            &:hover {
+                cursor: pointer;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    #moreServices {
+        color: $headerColor;
+        text-decoration: underline;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+#contact,
+#services {
+    .bold {
+        margin-top: 2.4rem;
+    }
+}
+
+//THE CONTACT PART
+#contact {
+    .italic {
+        font-size: .8em;
+        font-style: italic;
+    }
+    .form-control {
+        background-color: $background;
+        border: none;
+        border-bottom: 1px solid #ced4da;
+        color: $fontColor;
+        border-radius: none;
+        &:focus {
+            background-color: $background;
+            border: none;
+            border-bottom: 1px solid $buttonColor;
+            color: $fontColor;
+            box-shadow: none;
+        }
+    }
+}
+
+//FOOTER
+footer {
+    margin-top: 100px;
+    background-color: $navColor;
+    .container {
+        margin-bottom: 0;
+    }
+    a {
+        color: $fontColor;
+        &:hover {
+            color: $headerColor;
+            text-decoration: none;
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    }
+    hr {
+        border: .1rem solid $fontColor;
+    }
+}
+
+//MEDIA
+
+//SMALL SCREENS
+@media screen and (max-width:  576px) {
+    #forCompanies,
+    #forEntrepreneurs {
+        .button {
+            left: calc(50% - 120px);
+            bottom: 0%;
+        }
+    }
+    #secondScene {
+        padding-bottom: 60%;
+    }
+    #whatWeDo {
+        #text {
+            bottom: 0%;
+        }
+    }
+    #rocketScene { 
+        #rightCloud,
+        #leftCloud {
+            top: -50%;
+        }
+        #lune {
+            top: -55%;
+            right: 25%;
+        }
+        #rightCloud {
+            right: 10%;
+        }
+        #leftCloud {
+            right: 30%;
+        }
+        #rocket {
+            left: 0;
+            bottom: 5%;
+        }
+    }
+    .bold {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 0.2rem;
+        margin-bottom: 0rem;
+    }
+    #scene,
+    #fourthScene,
+    #fifthScene {
+        height: 50vh;
+        max-height: 600px;
+    }
+    #scene {
+        #office {
+            bottom: 15%;
+        }
+    }
+    #fourthScene{
+        #rocketSmoke {
+            left: -5%;
+        }
+        #rocket-4 {
+            left: 20%;
+        }
+    }
+    #services {
+        #fifthScene{
+            #smallPartRight {
+                right: 5%;
+            }
+            #smallPartLeft {
+                left: 15%;
+            }
+            #girl {
+                left: 25%;
+                top: 25%;
+            }
+        }
+    }
+}
+
+//MEDIUM SCREENS
+@media screen and (min-width:  576px) and (max-width: 992px) {
+    // .container {
+    //     overflow-x: hidden;
+    // }
+    #secondScene {
+        padding-bottom: 60%;
+    }
+    #scene {
+        #office {
+            bottom: 20%;
+        }
+    }
+    #forCompanies,
+    #forEntrepreneurs {
+        .button {
+            left: calc(50% - 120px);
+            bottom: 0%;
+        }
+    }
+    #whatWeDo {
+        #text {
+            bottom: calc(100%);
+        }
+    }
+    #rocketScene { 
+        #lune,
+        #rightCloud,
+        #leftCloud {
+            top: -40%;
+        }
+        #lune {
+            right: 25%;
+        }
+        #rightCloud {
+            right: 10%;
+        }
+        #leftCloud {
+            right: 35%;
+        }
+        #rocket {
+            left: 0;
+            bottom: 0%;
+        }
+    }
+    #fourthScene{
+        #rocket-4 {
+            left: 29%;
+        }
+    }
+    #services {
+        #fifthScene{
+            #smallPartRight {
+                right: 10%;
+            }
+            #smallPartLeft {
+                left: 20%;
+            }
+            #girl {
+                left: 30%;
+            }
+        }
+    }
+}
+
+//EXTRA LARGES SCREENES
+@media screen and (min-width: 1500px) {
+    #whatWeDo {
+        #text {
+            bottom: 0%;
+            left: 0%;
+        }
+    }
+    #rocketScene { 
+        #lune,
+        #rightCloud,
+        #leftCloud {
+            top: -35%;
+        }
+        #lune {
+            right: 25%;
+        }
+        #rightCloud {
+            right: 10%;
+        }
+        #leftCloud {
+            right: 25%;
+        }
+        #rocket {
+            bottom: 0;
+        }
+    }
+    #scene {
+        #office {
+            bottom: 10%;
+        }
+    }
+    #forEntrepreneurs {
+        .button {
+            bottom: 0%;
+        }
+    }
+}

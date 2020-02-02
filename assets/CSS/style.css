@@ -1,0 +1,564 @@
+body {
+  background: #4C24B1;
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+  padding: 100px 2rem;
+  padding-bottom: 0;
+}
+
+.button {
+  text-align: center;
+  margin-top: 2rem;
+  width: 15rem;
+  background-color: #00FFB8;
+  border: none;
+  border-radius: 8px;
+  margin: auto;
+  padding: .5rem 0;
+}
+
+.button a {
+  display: block;
+  color: #000;
+  margin: auto;
+  font-weight: 500;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #FFF;
+}
+
+.button:hover a {
+  color: #FFF;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h6 {
+  color: #00EBE7;
+  font-size: 1.5em;
+}
+
+h2 {
+  color: #00EBE7;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+h2 .border {
+  border: none !important;
+  border-bottom: 2px solid #FF00A6 !important;
+  padding-bottom: 0.5rem;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .container {
+  margin: 0;
+}
+
+.navbar ul .nav-link:hover {
+  color: #0A0C3E;
+}
+
+.navbar ul .menuLanguages:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#whatWeDo {
+  padding: 0;
+}
+
+#whatWeDo #rowWeDo {
+  margin: 0;
+  padding: 0;
+}
+
+#whatWeDo #text {
+  bottom: calc(0% - 106px);
+  left: 0%;
+  z-index: 10;
+}
+
+#whatWeDo #text img {
+  width: 80%;
+  top: -40%;
+  left: 10%;
+  z-index: -2;
+}
+
+#whatWeDo #text .button {
+  margin-top: 3rem;
+}
+
+#rocketScene {
+  height: calc((100vh - 100px)/2);
+  max-height: 600px;
+}
+
+#scene,
+#fourthScene,
+#fifthScene,
+#rocketScene,
+#secondScene {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#scene,
+#fourthScene,
+#fifthScene {
+  height: 65vh;
+  max-height: 600px;
+}
+
+#scene {
+  background: url(../images/forcompanies-layout-1.png);
+  background-repeat: no-repeat;
+}
+
+#scene #office {
+  bottom: 0%;
+}
+
+#rocketScene {
+  background-image: url(../images/backgroundFirstScene.png);
+}
+
+#rocketScene #spaceNebula {
+  width: 50%;
+  top: calc(50% - 200px);
+  left: calc(50% - 207px);
+}
+
+#rocketScene #lune,
+#rocketScene #rightCloud,
+#rocketScene #leftCloud {
+  top: -50%;
+}
+
+#rocketScene #lune {
+  right: 15%;
+}
+
+#rocketScene #rightCloud {
+  right: 0%;
+}
+
+#rocketScene #leftCloud {
+  right: 25%;
+}
+
+#rocketScene #rocket {
+  left: 0;
+  bottom: -20%;
+  z-index: 2;
+}
+
+#secondScene {
+  padding-bottom: 30%;
+  background-image: url(../images/backgroundSecondScene.png);
+  background-size: contain;
+}
+
+#secondScene #woman,
+#secondScene #man {
+  left: 0%;
+}
+
+#secondScene #woman {
+  bottom: 10%;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+#secondScene #man {
+  bottom: 0%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#fourthScene {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#fourthScene #background-4 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#fourthScene #nebula-4,
+#fourthScene #lune-4,
+#fourthScene #leftCloud-4,
+#fourthScene #rightCloud-4,
+#fourthScene #rocketSmoke,
+#fourthScene #rocket-4 {
+  z-index: -2;
+}
+
+#fourthScene #nebula-4 {
+  top: -50%;
+  left: -10%;
+}
+
+#fourthScene #lune-4 {
+  top: 0%;
+  right: 10%;
+}
+
+#fourthScene #leftCloud-4 {
+  top: 20%;
+  right: 25%;
+}
+
+#fourthScene #rightCloud-4 {
+  top: 15%;
+  right: 0%;
+}
+
+#fourthScene #rocketSmoke {
+  bottom: 5%;
+  left: -5%;
+  z-index: -5;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#fourthScene #rocket-4 {
+  left: 18%;
+  bottom: 20%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#forCompanies .button,
+#forEntrepreneurs .button {
+  left: 70%;
+  bottom: 5%;
+}
+
+#forEntrepreneurs .button {
+  bottom: -10%;
+}
+
+#forCompanies .text-part .absolute-space {
+  z-index: -5;
+  top: 0%;
+  left: -5%;
+}
+
+#forCompanies .text-part .absolute-space img {
+  width: 60%;
+}
+
+.bold {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+}
+
+#services #fifthScene #smallPartRight {
+  top: 10%;
+  right: 13%;
+}
+
+#services #fifthScene #smallPartLeft {
+  bottom: 20%;
+  left: 20%;
+}
+
+#services #fifthScene #girl {
+  top: 15%;
+  left: 30%;
+}
+
+#services #servicesVisiblePart {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#services #hidden {
+  padding-top: 100px;
+  height: 40vh;
+  top: 0%;
+  opacity: 0;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: -2;
+}
+
+#services #hidden #imgRocket {
+  left: -5%;
+  bottom: 100%;
+}
+
+#services #hidden #imgPlant {
+  right: -10%;
+  bottom: 100%;
+}
+
+#services #hidden #rightColumn li {
+  list-style-type: square;
+}
+
+#services #hidden p {
+  margin-top: 0;
+  font-size: small;
+  font-weight: lighter;
+}
+
+#services #hidden li {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#services #hidden #hiddenContent {
+  padding: 0;
+}
+
+#services #hidden #hiddenContent #hiddenMiddleImg {
+  top: 10%;
+  left: calc(50% - 150px);
+}
+
+#services #hidden #hiddenImg {
+  padding: 0;
+}
+
+#services #hidden #back:hover {
+  cursor: pointer;
+}
+
+#services #hidden #back p {
+  margin-bottom: 0;
+}
+
+#services #moreServices {
+  color: #00EBE7;
+  text-decoration: underline;
+}
+
+#services #moreServices:hover {
+  cursor: pointer;
+}
+
+#contact .bold,
+#services .bold {
+  margin-top: 2.4rem;
+}
+
+#contact .italic {
+  font-size: .8em;
+  font-style: italic;
+}
+
+#contact .form-control {
+  background-color: #4C24B1;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  color: #FFF;
+  border-radius: none;
+}
+
+#contact .form-control:focus {
+  background-color: #4C24B1;
+  border: none;
+  border-bottom: 1px solid #00FFB8;
+  color: #FFF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #0A0C3E;
+}
+
+footer .container {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #FFF;
+}
+
+footer a:hover {
+  color: #00EBE7;
+  text-decoration: none;
+}
+
+footer a i {
+  font-size: 1.5rem;
+}
+
+footer hr {
+  border: 0.1rem solid #FFF;
+}
+
+@media screen and (max-width: 576px) {
+  #forCompanies .button,
+  #forEntrepreneurs .button {
+    left: calc(50% - 120px);
+    bottom: 0%;
+  }
+  #secondScene {
+    padding-bottom: 60%;
+  }
+  #whatWeDo #text {
+    bottom: 0%;
+  }
+  #rocketScene #rightCloud,
+  #rocketScene #leftCloud {
+    top: -50%;
+  }
+  #rocketScene #lune {
+    top: -55%;
+    right: 25%;
+  }
+  #rocketScene #rightCloud {
+    right: 10%;
+  }
+  #rocketScene #leftCloud {
+    right: 30%;
+  }
+  #rocketScene #rocket {
+    left: 0;
+    bottom: 5%;
+  }
+  .bold {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+  }
+  #scene,
+  #fourthScene,
+  #fifthScene {
+    height: 50vh;
+    max-height: 600px;
+  }
+  #scene #office {
+    bottom: 15%;
+  }
+  #fourthScene #rocketSmoke {
+    left: -5%;
+  }
+  #fourthScene #rocket-4 {
+    left: 20%;
+  }
+  #services #fifthScene #smallPartRight {
+    right: 5%;
+  }
+  #services #fifthScene #smallPartLeft {
+    left: 15%;
+  }
+  #services #fifthScene #girl {
+    left: 25%;
+    top: 25%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  #secondScene {
+    padding-bottom: 60%;
+  }
+  #scene #office {
+    bottom: 20%;
+  }
+  #forCompanies .button,
+  #forEntrepreneurs .button {
+    left: calc(50% - 120px);
+    bottom: 0%;
+  }
+  #whatWeDo #text {
+    bottom: calc(100%);
+  }
+  #rocketScene #lune,
+  #rocketScene #rightCloud,
+  #rocketScene #leftCloud {
+    top: -40%;
+  }
+  #rocketScene #lune {
+    right: 25%;
+  }
+  #rocketScene #rightCloud {
+    right: 10%;
+  }
+  #rocketScene #leftCloud {
+    right: 35%;
+  }
+  #rocketScene #rocket {
+    left: 0;
+    bottom: 0%;
+  }
+  #fourthScene #rocket-4 {
+    left: 29%;
+  }
+  #services #fifthScene #smallPartRight {
+    right: 10%;
+  }
+  #services #fifthScene #smallPartLeft {
+    left: 20%;
+  }
+  #services #fifthScene #girl {
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #whatWeDo #text {
+    bottom: 0%;
+    left: 0%;
+  }
+  #rocketScene #lune,
+  #rocketScene #rightCloud,
+  #rocketScene #leftCloud {
+    top: -35%;
+  }
+  #rocketScene #lune {
+    right: 25%;
+  }
+  #rocketScene #rightCloud {
+    right: 10%;
+  }
+  #rocketScene #leftCloud {
+    right: 25%;
+  }
+  #rocketScene #rocket {
+    bottom: 0;
+  }
+  #scene #office {
+    bottom: 10%;
+  }
+  #forEntrepreneurs .button {
+    bottom: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
