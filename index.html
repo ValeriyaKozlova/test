@@ -46,7 +46,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse text-center" id="navbarResponsive">
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarResponsive"
+          >
             <ul class="navbar-nav ml-auto p-2">
               <li class="nav-item">
                 <a class="nav-link" href="#whatWeDo"
@@ -69,28 +72,29 @@
               </li>
             </ul>
             <p class="mb-0">
-                <span class="menuLanguages m-2">
-                  <a href="#"
-                    ><img src="assets/images/france-flag.png" alt="flag of France"
-                  /></a> </span>
-                <span class="menuLanguages m-2">
-                  <a href="index.html"
-                    ><img
-                      src="assets/images/england-flag.png"
-                      alt="flag of England"
-                  /></a></span>
-                  <span class="menuLanguages m-2">
-                  <a href="#"
-                    ><img
-                      src="assets/images/netherlands-flag.png"
-                      alt="flag of Netherlands"
-                  /></a>
-                  </span>
+              <span class="menuLanguages m-2">
+                <a href="#"
+                  ><img src="assets/images/france-flag.png" alt="flag of France"
+                /></a>
+              </span>
+              <span class="menuLanguages m-2">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/england-flag.png"
+                    alt="flag of England"/></a
+              ></span>
+              <span class="menuLanguages m-2">
+                <a href="#"
+                  ><img
+                    src="assets/images/netherlands-flag.png"
+                    alt="flag of Netherlands"
+                /></a>
+              </span>
             </p>
           </div>
         </div>
       </nav>
-    <!-- main part -->
+      <!-- main part -->
       <div class="relative" id="whatWeDo">
         <!-- What we do part -->
         <div class="row">
@@ -184,7 +188,10 @@
           </div>
         </div>
         <div class="row row justify-content-center">
-          <div class="col-sm-12 col-lg-10 col-xl-8 text-center relative" id="scene">
+          <div
+            class="col-sm-12 col-lg-10 col-xl-8 text-center relative"
+            id="scene"
+          >
             <div class="rellax absolute" data-rellax-speed="-1.5" id="office">
               <img
                 class="img-fluid"
@@ -265,11 +272,11 @@
                 />
               </div>
             </div>
+            <p class="right-align button absolute">
+              <a href="#contact">Yes, that's me</a>
+            </p>
           </div>
         </div>
-        <p class="right-align button absolute">
-          <a href="#contact">Yes, that's me</a>
-        </p>
       </div>
       <!-- The services part -->
       <div class="relative" id="services">
@@ -279,11 +286,18 @@
             <p>Tailored solutions for different type of collaboration</p>
             <p>Our price and quality are the most competitive on the market!</p>
             <p class="text-right">
-              <a id="moreServices">Click to know more</a>
+              <a
+                id="moreServices"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                >Click to know more</a
+              >
             </p>
           </div>
-          <div class="col-sm-12 col-lg-10 col-xl-8 relative text-center"
-            id="fifthScene">
+          <div
+            class="col-sm-12 col-lg-10 col-xl-8 relative text-center"
+            id="fifthScene"
+          >
             <img
               class="img-fluid"
               src="assets/images/backgroundFithScene.png"
@@ -315,113 +329,143 @@
             </div>
           </div>
         </div>
-       <!-- hidden-part -->
-        <div class="absolute" id="hidden">
-          <div class="row">
-            <div class="col-10 offset-1" id="back">
-              <p>Back</p>
-              <i class="material-icons">arrow_back</i>
-            </div>
-          </div>
-          <div class="row justify-content-center relative" id="hiddenContent">
-            <div id="hiddenMiddleImg" class="col-2 absolute">
-              <img
-                class="img-fluid"
-                src="assets/images/hidden.png"
-                alt="structure"
-              />
-            </div>
-            <div class="col-5">
-              <h6>Startup Development</h6>
-              <ul>
-                <li>Market Analysis</li>
-                <li>Value Proposition</li>
-                <li>MVP</li>
-                <li>
-                  Marketing
-                  <p>- Digital Strategy</p>
-                </li>
-                <li>New Business</li>
-                <li>First Sales</li>
-                <li>Business Model</li>
-                <li>Validations</li>
-                <li>Unique Value Proposition</li>
-                <li>
-                  Marketing
-                  <p>- Sales Development</p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-5">
-              <h6>Product Development</h6>
-              <ul id="rightColumn">
-                <li>
-                  Full Stack
-                  <p class="listHidden">
-                    React.js, Node.js, JavaScript, AngularJS etc.
-                  </p>
-                </li>
-                <li>
-                  Back-end
-                  <p class="listHidden">
-                    Node.js, JavaScript, Amazon Web Services, Git, MongoDB etc.
-                  </p>
-                </li>
-                <li>
-                  Data Engineering
-                  <p class="listHidden">
-                    Apache Spark, Hadoop, Python, Extract / Transform / Load
-                    (ETL), Amazon Web Services etc.
-                  </p>
-                </li>
-                <li>
-                  Cloud tech
-                  <p class="listHidden">
-                    Amazon Web Services, Docker, Ansible, Jenkins.
-                  </p>
-                </li>
-                <li>
-                  Robotics / Hardware
-                  <p class="listHidden">
-                    Prototype development, UiPath, Blue Prism etc.
-                  </p>
-                </li>
-                <li>Data Science</li>
-                <li>Blockchain</li>
-                <li>AI</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row justify-content-center relative" id="hiddenImg">
-            <div class="col-sm-12">
-              <p class="text-center">
-                <a href="#contact">And much more just ask.</a>
-              </p>
-            </div>
-            <div id="imgRocket" class="absolute">
-              <img
-                class="img-fluid"
-                src="assets/images/hidden-rocket.png"
-                alt="a rocket"
-              />
-            </div>
-            <div id="imgPlant" class="absolute">
-              <img
-                class="img-fluid"
-                src="assets/images/hidden-flower.png"
-                alt="a plant"
-              />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-sm-12">
-              <p class="button justify-content-center">
-                <a href="#contact">I need it</a>
-              </p>
+        <!-- hidden-part -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="hidden">
+              <div class="row p-0">
+                <div class="col-10 offset-1 p-1" id="back" data-dismiss="modal">
+                  <p>Back</p>
+                  <i class="material-icons">arrow_back</i>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div
+                  class="row justify-content-center relative p-0"
+                  id="hiddenContent"
+                >
+                  <div id="hiddenMiddleImg" class="col-2 absolute">
+                    <img
+                      class="img-fluid d-none d-sm-block"
+                      src="assets/images/hidden.png"
+                      alt="structure"
+                    />
+                  </div>
+                  <div class="col-10 col-md-5" id="leftColumn">
+                    <h6>Startup Development</h6>
+                    <ul>
+                      <li>Market Analysis</li>
+                      <li>Value Proposition</li>
+                      <li>MVP</li>
+                      <li>
+                        Marketing
+                        <p>- Digital Strategy</p>
+                      </li>
+                      <li>New Business</li>
+                      <li>First Sales</li>
+                      <li>Business Model</li>
+                      <li>Validations</li>
+                      <li>Unique Value Proposition</li>
+                      <li>
+                        Marketing
+                        <p>- Sales Development</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-10 col-md-5">
+                    <h6>Product Development</h6>
+                    <ul id="rightColumn">
+                      <li>
+                        Full Stack
+                        <p class="listHidden">
+                          React.js, Node.js, JavaScript, AngularJS etc.
+                        </p>
+                      </li>
+                      <li>
+                        Back-end
+                        <p class="listHidden">
+                          Node.js, JavaScript, Amazon Web Services, Git, MongoDB
+                          etc.
+                        </p>
+                      </li>
+                      <li>
+                        Data Engineering
+                        <p class="listHidden">
+                          Apache Spark, Hadoop, Python, Extract / Transform /
+                          Load (ETL), Amazon Web Services etc.
+                        </p>
+                      </li>
+                      <li>
+                        Cloud tech
+                        <p class="listHidden">
+                          Amazon Web Services, Docker, Ansible, Jenkins.
+                        </p>
+                      </li>
+                      <li>
+                        Robotics / Hardware
+                        <p class="listHidden">
+                          Prototype development, UiPath, Blue Prism etc.
+                        </p>
+                      </li>
+                      <li>Data Science</li>
+                      <li>Blockchain</li>
+                      <li>AI</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="row justify-content-center relative p-0"
+                  id="hiddenImg"
+                >
+                  <div class="col-12">
+                    <p class="text-center">
+                      <a
+                        data-dismiss="modal"
+                        data-target="#contact"
+                        href="#contact"
+                        >And much more just ask.</a
+                      >
+                    </p>
+                  </div>
+                  <div id="imgRocket" class="d-none d-sm-block absolute">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/hidden-rocket.png"
+                      alt="a rocket"
+                    />
+                  </div>
+                  <div id="imgPlant" class="d-none d-sm-block absolute">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/hidden-flower.png"
+                      alt="a plant"
+                    />
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-sm-12">
+                    <p class="button justify-content-center">
+                      <a
+                        data-dismiss="#contact"
+                        data-target="#contact"
+                        href="#contact"
+                        >I need it</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
+      <!-- Contact -->
       <div class="relative" id="contact">
         <div class="row justify-content-center">
           <div class="col-sm-12 col-lg-10 col-xl-8 text-center">
@@ -434,110 +478,147 @@
             <p class="italic">It will be a pleasure for us to answer you!</p>
           </div>
         </div>
-          <div class="row justify-content-center">
-            <div class="col-col-sm-12 col-md-6 col-xl-4">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="fullName" placeholder="Full name" required>
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control" id="telephone" placeholder="Telephone number" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="Email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" id="Message" rows="4" placeholder="Message" required></textarea>
-                </div>
-                <div class="form-group text-center">
-                  <input type="submit" value="I need it" class="button" />
-                </div>
-              </form>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-col-sm-12 col-md-6 col-xl-4">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="telephone"
+                  placeholder="Telephone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="Message"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group text-center">
+                <input type="submit" value="I need it" class="button" />
+              </div>
+            </form>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
     <!-- Footer -->
     <footer class="page-footer font-small pt-5">
       <div class="container-fluid pt-2 pb-2">
-          <div class="container">
-              <div class="row p-5">
-                  <div class="col-md-6 col-12 text-left text-center text-md-left">
-                      <h2 class="text-white">AN CUBATOR</h2>
-                      <p class="m-2"><a href="#contact">Contact</a></p>
-                        <p class="menuLanguages m-2 d-sm-inline d-md-block">
-                          <a href="#"
-                            ><img src="assets/images/france-flag.png" alt="flag of France"
-                          /> <span class="m-2">English</span></a></p>
-                        <p class="menuLanguages m-2 d-sm-inline d-md-block">
-                          <a href="index.html"
-                            ><img
-                              src="assets/images/england-flag.png"
-                              alt="flag of England"
-                          /><span class="m-2">Français</span></a></p>
-                          <p class="menuLanguages m-2 d-sm-inline d-md-block">
-                          <a href="#"
-                            ><img
-                              src="assets/images/netherlands-flag.png"
-                              alt="flag of Netherlands"
-                          /> <span class="m-2">Nederlands</span></a>
-                          </p>
-                          <p><img src="assets/images/logo.png" class="img-responsive p-2" alt=""></p>
-                  </div>
-                  <div class="col-md-3 col-6 text-left text-center text-md-left">
-                      <h3 class="text-white">About us</h3>
-                      <p><a href="#">Blog</a></p>
-                      <p><a href="#">Careers</a></p>
-                  </div>
-                  <div class="col-md-3 col-6 text-center text-md-left">
-                      <h3 class="text-white">Links</h3>
-                        <p>
-                          <a href="#whatWeDo"
-                            >What we do</a
-                          >
-                        </p>
-                        <p>
-                          <a href="#forCompanies">For companies</a>
-                        </p>
-                        <p>
-                          <a href="#forEntrepreneurs"
-                            >For Entrepreneurs</a
-                          >
-                        </p>
-                        <p>
-                          <a href="#services">Services</a>
-                        </p>
-                        <p>
-                          <a href="#contact">Contact</a>
-                        </p>
-                  </div>
-              </div>
-              <hr>
-              <div class="row p-5">
-                <div class="col-lg-5 col-12 text-center text-lg-left order-5 order-md-1">
-                  <p>© Copyright 2020 AN CUBATOR - All Rights Reserved</p>
-                </div>
-                <div class="col-lg-1 col-md-2 col-4 text-center order-2 order">
-                  <p><a href="#">Privacy</a></p>
-                </div>
-                <div class="col-lg-1 col-md-2 col-4 text-center order-3">
-                  <p><a href="#">Accessibility</a></p>
-                </div>
-                <div class="col-lg-1 col-md-2 col-4 text-center order-4">
-                  <p><a href="#">Terms</a></p>
-                </div>
-                  <div class="col-lg-4 col-md-6 col-12 text-center order-1 order-md-5 pb-3">
-                      <a class="pr-4" href="#"><i class="fab fa-linkedin-in"></i></a>
-                      <a class="pr-4" href="#"><i class="fab fa-instagram"></i></a>
-                      <a class="pr-4" href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                  </div>
-              </div>
+        <div class="container">
+          <div class="row p-5">
+            <div class="col-md-6 col-12 text-left text-center text-md-left">
+              <h2 class="text-white">AN CUBATOR</h2>
+              <p class="m-2"><a href="#contact">Contact</a></p>
+              <p class="menuLanguages m-2 d-sm-inline d-md-block">
+                <a href="#"
+                  ><img
+                    src="assets/images/france-flag.png"
+                    alt="flag of France"
+                  />
+                  <span class="m-2">English</span></a
+                >
+              </p>
+              <p class="menuLanguages m-2 d-sm-inline d-md-block">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/england-flag.png"
+                    alt="flag of England"
+                  /><span class="m-2">Français</span></a
+                >
+              </p>
+              <p class="menuLanguages m-2 d-sm-inline d-md-block">
+                <a href="#"
+                  ><img
+                    src="assets/images/netherlands-flag.png"
+                    alt="flag of Netherlands"
+                  />
+                  <span class="m-2">Nederlands</span></a
+                >
+              </p>
+              <p>
+                <img
+                  src="assets/images/logo.png"
+                  class="img-responsive p-2"
+                  alt=""
+                />
+              </p>
+            </div>
+            <div class="col-md-3 col-6 text-left text-center text-md-left">
+              <h3 class="text-white">About us</h3>
+              <p><a href="#">Blog</a></p>
+              <p><a href="#">Careers</a></p>
+            </div>
+            <div class="col-md-3 col-6 text-center text-md-left">
+              <h3 class="text-white">Links</h3>
+              <p>
+                <a href="#whatWeDo">What we do</a>
+              </p>
+              <p>
+                <a href="#forCompanies">For companies</a>
+              </p>
+              <p>
+                <a href="#forEntrepreneurs">For Entrepreneurs</a>
+              </p>
+              <p>
+                <a href="#services">Services</a>
+              </p>
+              <p>
+                <a href="#contact">Contact</a>
+              </p>
+            </div>
           </div>
+          <hr />
+          <div class="row p-5">
+            <div
+              class="col-lg-5 col-12 text-center text-lg-left order-5 order-md-1"
+            >
+              <p>© Copyright 2020 AN CUBATOR - All Rights Reserved</p>
+            </div>
+            <div class="col-lg-1 col-md-2 col-4 text-center order-2 order">
+              <p><a href="#">Privacy</a></p>
+            </div>
+            <div class="col-lg-1 col-md-2 col-4 text-center order-3">
+              <p><a href="#">Accessibility</a></p>
+            </div>
+            <div class="col-lg-1 col-md-2 col-4 text-center order-4">
+              <p><a href="#">Terms</a></p>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 text-center order-1 order-md-5 pb-3"
+            >
+              <a class="pr-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a class="pr-4" href="#"><i class="fab fa-instagram"></i></a>
+              <a class="pr-4" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://kit.fontawesome.com/3f5d2c0df9.js"></script>

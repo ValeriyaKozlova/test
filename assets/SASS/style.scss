@@ -18,6 +18,7 @@ body {
     max-width: 1400px;
     margin: auto;
     padding: 0;
+    overflow-x: hidden;
 }
 .absolute {
     position: absolute;
@@ -237,11 +238,6 @@ h2 {
         bottom: 5%;
     }
 }
-#forEntrepreneurs {
-    .button {
-        bottom: -10%;
-    }
-}
 #forCompanies {
     .text-part {
         .absolute-space {
@@ -281,14 +277,21 @@ h2 {
     #servicesVisiblePart {
         transition: all .5s;
     }
-    #hidden {
-        padding-top: 100px;
-        height: 40vh;
-        top: 0%;
-        opacity: 0;
+    #moreServices {
+        color: $headerColor;
+        text-decoration: underline;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .modal-dialog {
+        width: 90vw;
+        max-width: 900px;
+    }
+    .modal-content {
         transform: translate(100%);
         transition: all .5s;
-        z-index: -2;
+        background-color: $background;
         #imgRocket {
             left: -5%;
             bottom: 100%;
@@ -302,6 +305,12 @@ h2 {
                 list-style-type: square;
             }
         }
+        #leftColumn {
+            li {
+                list-style-type: none;
+            }
+        }
+        
         p {
             margin-top: 0;
             font-size: small;
@@ -329,13 +338,7 @@ h2 {
                 margin-bottom: 0;
             }
         }
-    }
-    #moreServices {
-        color: $headerColor;
-        text-decoration: underline;
-        &:hover {
-            cursor: pointer;
-        }
+    
     }
 }
 #contact,
@@ -397,6 +400,11 @@ footer {
     #forEntrepreneurs {
         .button {
             left: calc(50% - 120px);
+            bottom: -5%;
+        }
+    }
+    #forEntrepreneurs {
+        .button {
             bottom: 0%;
         }
     }
@@ -466,6 +474,9 @@ footer {
                 top: 25%;
             }
         }
+    }
+    #contact {
+        padding-top: 0;
     }
 }
 

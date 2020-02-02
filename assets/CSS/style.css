@@ -10,6 +10,7 @@ body {
   max-width: 1400px;
   margin: auto;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .absolute {
@@ -261,10 +262,6 @@ h2 .border {
   bottom: 5%;
 }
 
-#forEntrepreneurs .button {
-  bottom: -10%;
-}
-
 #forCompanies .text-part .absolute-space {
   z-index: -5;
   top: 0%;
@@ -302,64 +299,6 @@ h2 .border {
   transition: all .5s;
 }
 
-#services #hidden {
-  padding-top: 100px;
-  height: 40vh;
-  top: 0%;
-  opacity: 0;
-  -webkit-transform: translate(100%);
-          transform: translate(100%);
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  z-index: -2;
-}
-
-#services #hidden #imgRocket {
-  left: -5%;
-  bottom: 100%;
-}
-
-#services #hidden #imgPlant {
-  right: -10%;
-  bottom: 100%;
-}
-
-#services #hidden #rightColumn li {
-  list-style-type: square;
-}
-
-#services #hidden p {
-  margin-top: 0;
-  font-size: small;
-  font-weight: lighter;
-}
-
-#services #hidden li {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#services #hidden #hiddenContent {
-  padding: 0;
-}
-
-#services #hidden #hiddenContent #hiddenMiddleImg {
-  top: 10%;
-  left: calc(50% - 150px);
-}
-
-#services #hidden #hiddenImg {
-  padding: 0;
-}
-
-#services #hidden #back:hover {
-  cursor: pointer;
-}
-
-#services #hidden #back p {
-  margin-bottom: 0;
-}
-
 #services #moreServices {
   color: #00EBE7;
   text-decoration: underline;
@@ -367,6 +306,69 @@ h2 .border {
 
 #services #moreServices:hover {
   cursor: pointer;
+}
+
+#services .modal-dialog {
+  width: 90vw;
+  max-width: 900px;
+}
+
+#services .modal-content {
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #4C24B1;
+}
+
+#services .modal-content #imgRocket {
+  left: -5%;
+  bottom: 100%;
+}
+
+#services .modal-content #imgPlant {
+  right: -10%;
+  bottom: 100%;
+}
+
+#services .modal-content #rightColumn li {
+  list-style-type: square;
+}
+
+#services .modal-content #leftColumn li {
+  list-style-type: none;
+}
+
+#services .modal-content p {
+  margin-top: 0;
+  font-size: small;
+  font-weight: lighter;
+}
+
+#services .modal-content li {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#services .modal-content #hiddenContent {
+  padding: 0;
+}
+
+#services .modal-content #hiddenContent #hiddenMiddleImg {
+  top: 10%;
+  left: calc(50% - 150px);
+}
+
+#services .modal-content #hiddenImg {
+  padding: 0;
+}
+
+#services .modal-content #back:hover {
+  cursor: pointer;
+}
+
+#services .modal-content #back p {
+  margin-bottom: 0;
 }
 
 #contact .bold,
@@ -426,6 +428,9 @@ footer hr {
   #forCompanies .button,
   #forEntrepreneurs .button {
     left: calc(50% - 120px);
+    bottom: -5%;
+  }
+  #forEntrepreneurs .button {
     bottom: 0%;
   }
   #secondScene {
@@ -482,6 +487,9 @@ footer hr {
   #services #fifthScene #girl {
     left: 25%;
     top: 25%;
+  }
+  #contact {
+    padding-top: 0;
   }
 }
 
