@@ -16,63 +16,19 @@ window.addEventListener('scroll', e => {
         navFixed.style.background = 'rgba(76,36,177,.8)';
         } else {
             navFixed.style.background = 'none';
-
         }
 });
-
-//hidden part
-// const buttonToKnowMore = document.getElementById('moreServices');
-// const hiddenPart = document.getElementById('hidden');
-// const servicesVisiblePart = document.getElementById('servicesVisiblePart');
-// const body = Array.from(document.getElementsByTagName('body'));
-// console.log(body[0]);
-// buttonToKnowMore.addEventListener('click', e => {
-//     servicesVisiblePart.style.opacity = "0";
-//     servicesVisiblePart.style.zIndex = "-2"
-//     hiddenPart.style.opacity = "1";
-//     hiddenPart.style.zIndex = "2";
-//     hiddenPart.style.transform = "translate(25%)";
-//     body[0].style.overflow = "hidden";
-// });
-
-// const buttonBack = document.getElementById('back');
-// buttonBack.addEventListener('click', e => {
-//     servicesVisiblePart.style.opacity = "1";
-//     servicesVisiblePart.style.zIndex = "2"
-//     hiddenPart.style.opacity = "0";
-//     hiddenPart.style.zIndex = "-2";
-//     hiddenPart.style.transform = "translate(-50%)";
-//     hiddenPart.style.top = "10%";
-//     body[0].style.overflow = "visible";
-//     body[0].style.overflowX = "hidden";
-
-// });
 
 // hidden part
 const buttonToKnowMore = document.getElementById('moreServices');
 const hiddenPart = document.getElementById('hidden');
-// const servicesVisiblePart = document.getElementById('servicesVisiblePart');
-// const body = Array.from(document.getElementsByTagName('body'));
-// console.log(body[0]);
 buttonToKnowMore.addEventListener('click', e => {
-    // servicesVisiblePart.style.opacity = "0";
-    // servicesVisiblePart.style.zIndex = "-2"
-    // hiddenPart.style.opacity = "1";
-    // hiddenPart.style.zIndex = "2";
     hiddenPart.style.transform = "translate(0%)";
-    // body[0].style.overflow = "hidden";
 });
 
 const buttonBack = document.getElementById('back');
 buttonBack.addEventListener('click', e => {
-    // servicesVisiblePart.style.opacity = "1";
-    // servicesVisiblePart.style.zIndex = "2"
-    // hiddenPart.style.opacity = "0";
-    // hiddenPart.style.zIndex = "-2";
     hiddenPart.style.transform = "translate(100%)";
-    // hiddenPart.style.top = "10%";
-    // body[0].style.overflow = "visible";
-    // body[0].style.overflowX = "hidden";
 
 });
 

@@ -10,7 +10,6 @@ body {
   max-width: 1400px;
   margin: auto;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .absolute {
@@ -71,19 +70,22 @@ h2 .border {
   padding-bottom: 0.5rem;
 }
 
-.navbar {
+#navbarAN {
   padding: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: transparent;
 }
 
-.navbar .container {
+#navbarAN .container {
   margin: 0;
 }
 
-.navbar ul .nav-link:hover {
+#navbarAN ul .nav-link:hover {
   color: #0A0C3E;
 }
 
-.navbar ul .menuLanguages:hover img {
+#navbarAN ul .menuLanguages:hover img {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
@@ -208,8 +210,7 @@ h2 .border {
 }
 
 #fourthScene #background-4 {
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 #fourthScene #nebula-4,
@@ -259,7 +260,7 @@ h2 .border {
 #forCompanies .button,
 #forEntrepreneurs .button {
   left: 70%;
-  bottom: 5%;
+  bottom: 0%;
 }
 
 #forCompanies .text-part .absolute-space {
@@ -385,7 +386,7 @@ h2 .border {
   background-color: #4C24B1;
   border: none;
   border-bottom: 1px solid #ced4da;
-  color: #FFF;
+  color: #000;
   border-radius: none;
 }
 
@@ -393,7 +394,7 @@ h2 .border {
   background-color: #4C24B1;
   border: none;
   border-bottom: 1px solid #00FFB8;
-  color: #FFF;
+  color: #000;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -568,5 +569,18 @@ footer hr {
   #forEntrepreneurs .button {
     bottom: 0%;
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #4C24B1 inset;
+  -webkit-background-clip: #4C24B1;
 }
 /*# sourceMappingURL=style.css.map */

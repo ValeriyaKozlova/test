@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!--Normalize CSS-->
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
     <!-- Compiled and minified CSS BOOTSTRAP -->
     <link
       rel="stylesheet"
@@ -27,11 +29,14 @@
     <link rel="stylesheet" href="assets/CSS/style.css" />
     <title>AN CUBATOR</title>
   </head>
-  <body data-spy="scroll" data-target="#navbarAN">
-    <div class="container">
+  <body data-spy="scroll" data-target="#navFixed">
+    <header class="sticky-top container">
       <!-- navigation -->
-      <nav id="navbarAN" class="navbar navbar-dark navbar-expand-lg sticky-top">
-        <div class="container" id="navFixed">
+      <nav
+      id="navFixed"
+        class="navbar navbar-dark navbar-expand-lg"
+      >
+        
           <a href="#" class="navbar-brad p-2"
             ><img
               class="d-inline-block align-top"
@@ -92,9 +97,11 @@
               </span>
             </p>
           </div>
-        </div>
+        
       </nav>
+    </header>
       <!-- main part -->
+    <div class="container">
       <div class="relative" id="whatWeDo">
         <!-- What we do part -->
         <div class="row">
@@ -272,11 +279,11 @@
                 />
               </div>
             </div>
-            <p class="right-align button absolute">
-              <a href="#contact">Yes, that's me</a>
-            </p>
           </div>
         </div>
+        <p class="right-align button absolute">
+          <a href="#contact">Yes, that's me</a>
+        </p>
       </div>
       <!-- The services part -->
       <div class="relative" id="services">
