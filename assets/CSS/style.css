@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #4C24B1;
   font-family: 'Roboto', sans-serif;
@@ -271,6 +275,10 @@ h2 .border {
 
 #forCompanies .text-part .absolute-space img {
   width: 60%;
+}
+
+#forEntrepreneurs {
+  overflow-x: hidden;
 }
 
 .bold {

@@ -7,6 +7,9 @@ $headerColor: #00EBE7;
 $headerBorderColor: #FF00A6;
 $menuActiveColor: #4C79FE;
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: $background;
     font-family: 'Roboto', sans-serif;
@@ -238,11 +241,6 @@ h2 {
         bottom: 0%;
     }
 }
-// #forEntrepreneurs {
-//     .button {
-//         bottom: -10%;
-//     }
-// }
 #forCompanies {
     .text-part {
         .absolute-space {
@@ -255,7 +253,9 @@ h2 {
         }
     }
 }
-
+#forEntrepreneurs {
+    overflow-x: hidden;
+}
 .bold {
     font-size: 2em;
     font-weight: bold;
@@ -589,6 +589,7 @@ footer {
     }
 }
 
+//changes default properties of web input
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
