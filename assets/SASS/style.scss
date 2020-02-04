@@ -7,9 +7,6 @@ $headerColor: #00EBE7;
 $headerBorderColor: #FF00A6;
 $menuActiveColor: #4C79FE;
 
-// html {
-//     scroll-behavior: smooth;
-// }
 body {
     background: $background;
     font-family: 'Roboto', sans-serif;
@@ -370,6 +367,9 @@ h2 {
             color: #000;
             box-shadow: none;
         }
+    }
+    label {
+        color:grey;
     }
 }
 
